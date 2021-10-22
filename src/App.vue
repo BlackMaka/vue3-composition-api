@@ -1,28 +1,18 @@
 <template>
-  <!-- Remove & use example component! -->
-  <HelloWorld 
-    :msg="message" 
-    @click="handler" />
-  <HelloWorld msg="Good" />
+  <ACV />
 </template>
 
 <script>
-import HelloWorld from '~/components/HelloWorld'
+//import ACV from '~/components/Normal'
+import ACV from '~/compositions/Acomposition'
 
 export default {
-  components: {
-    HelloWorld
-  },
-  data() {
-    return {
-      message: 'Hello Vue!'
-    }
-  },
-  methods: {
-    handler() {
-      console.log(this.message)
-      this.message += '!'
-    }
+  components:{
+    ACV
   }
 }
 </script>
+
+<style>
+
+</style>
