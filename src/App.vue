@@ -1,28 +1,36 @@
 <template>
-  <!-- Remove & use example component! -->
-  <HelloWorld 
-    :msg="message" 
-    @click="handler" />
-  <HelloWorld msg="Good" />
+  <!-- <Normal
+    class="heropy"
+    style="color:red"
+    color="#ff0000"
+    @hello="log">
+    Apple
+  </Normal> -->
+  <ACV
+    class="heropy"
+    style="color:red"
+    color="#ff0000"
+    @hello="log">
+    ACV
+  </ACV>
 </template>
 
 <script>
-import HelloWorld from '~/components/HelloWorld'
-
+//import Normal from '~/components/Normal';
+import ACV from '~/compositions/AComposition';
 export default {
-  components: {
-    HelloWorld
+  components:{
+    //Normal,
+    ACV
   },
-  data() {
-    return {
-      message: 'Hello Vue!'
-    }
-  },
-  methods: {
-    handler() {
-      console.log(this.message)
-      this.message += '!'
+  methods:{
+    log(){
+      console.log('Hellog');
     }
   }
 }
 </script>
+
+<style>
+
+</style>
